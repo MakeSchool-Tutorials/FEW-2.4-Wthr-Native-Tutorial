@@ -2,7 +2,7 @@
 
 What's Wthr? It's a new native app that shows the current weather info on your phone. 
 
-What does it meant to be a native app? As a native app it runs truly native code on your device. 
+What does it mean to be a native app? As a native app, it runs truly native code on your device. 
 
 Does it work on iOS or Android? It runs on both! This project is built with React Native. React Native can build for Android and iOS both from the same code base. 
 
@@ -44,9 +44,9 @@ Open the terminal and use the command below replacing `<NameOfProject>` with the
 
 The command will prompt you for the type of starter project you want to create. Choose 'Blank template'
 
-Next the command prompts you for an app name. This can be different than the project name. 
+Next, the command prompts you for an app name. This can be different from the project name. 
 
-Wait for the process to finishing install all of the dependent files. 
+Wait for the process to finish installing all of the dependent files. 
 
 You'll need the Expo App to view your 
 
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-The first two lines import React from the 'react' package. The second line imports two native Components: `Text`, and `View` from the 'react-native' package. StyleSheet is a halper Object for creating styles sheets in React Native.  
+The first two lines import React from the 'react' package. The second line imports two native Components: `Text`, and `View` from the 'react-native' package. `StyleSheet` is a helper Object for creating styles sheets in React Native.  
 
 ```JavaScript 
 import React from 'react';
@@ -113,7 +113,7 @@ import { StyleSheet, Text, View } from 'react-native';
 ...
 ```
 
-The next block of code id the defintion of a component. This component is named App, and it extends `React.Component`. 
+The next block of code is the definition of a component. This component is named App, and it extends `React.Component`. 
 
 ```JavaScript 
 ...
@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-Notice the property `container` has four properties with values. These properties: flex, backgroundColor, alignItems, and justifyContent are standard CSS properties and the value are the same values you  would have used in CSS. 
+Notice the property `container` has four properties with values. These properties: flex, backgroundColor, alignItems, and `justifyContent` are standard CSS properties and the value are the same values you would have used in CSS. 
 
 Summary
 
@@ -180,7 +180,7 @@ Makes text
 
 #### View 
 
-A view is arectangular area on the screen that can display child elements. 
+A view is a rectangular area on the screen that can display child elements. 
 
 ```
 <View>
@@ -215,7 +215,7 @@ const DisplayWeather = (props) => {
 export default DisplayWeather
 ```
 
-This defines a simle component. This component is defiend as function. Component function based component must return JSX and should take a single parameter named props. 
+This defines a simple component. This component is defined as a function. Component function based component must return JSX and should take a single parameter named props. 
 
 ```JSX
 import React from 'react'
@@ -230,7 +230,7 @@ const DisplayWeather = (props) => {
 }
 ```
 
-Add a View and Text Component. The View will act as a container for the Text and the Text will display the temperature. For now we will assume the temperature is 72˚. In the future you will get the weather data from an online service and display the actual temperature here. 
+Add a View and Text Component. The View will act as a container for the Text and the Text will display the temperature. For now, we will assume the temperature is 72˚. In the future, you will get the weather data from an online service and display the actual temperature here. 
 
 ```JSX
 import React from 'react'
@@ -258,9 +258,9 @@ const styles = StyleSheet.create({
 })
 ```
 
-Last add a style sheet. Do this by definging a variable named styles and assigning it an Object with CSS properties that can be applied to Components. 
+Lastly, add a style sheet. Do this by defining a variable named `styles` and assigning it an Object with CSS properties that can be applied to Components. 
 
-Look at the code above notice the styles object defines keys, `container` and `temp`, that each hold an object. These objects are assigned to the `style` prop on each of the two components. 
+Look at the code above notice the styles object defines keys, `container` and `temp`, that each holds an object. These objects are assigned to the `style` prop on each of the two components. 
 
 ## Test your Component 
 
@@ -268,7 +268,7 @@ Import and display this component in App. Add the following at the top of App.js
 
 `import DisplayWeather from './DisplayWeather'`
 
-Notice, when importing your own files you'll need to include a path. Sicne the file is in the same folder the path begins: './'
+Notice, when importing your own files you'll need to include a path. Since the file is in the same folder the path begins: './'
 
 Use your component in the `render()` method in the App Component. 
 
@@ -278,7 +278,7 @@ Use your component in the `render()` method in the App Component.
 </View>
 ```
 
-Notice that you don't need to use a closing tag for `DisplayWeather` since it doesn't have any children. You do need to use /> to 'self close' this tag. 
+Notice that you don't need to use a closing tag for `DisplayWeather` since it doesn't have any children. You do need to use /> to 'self-close' this tag. 
 
 Challenge: 
 
@@ -286,7 +286,7 @@ Add another Text component to display a description of the weather. Edit the Dis
 
 > Partly Cloudy
 
-Save and test your work. Your app should refresh it's view in Expo. 
+Save and test your work. Your app should refresh its view in Expo. 
 
 ## Get the geolocation
 
@@ -294,11 +294,11 @@ To get the weather data you need to know the location of the phone. We can get t
 
 `navigator.geolocation.getCurrentPosition(success, error, options)`
 
-The component needs to know if the location data is available or not. Getting location data is an asynchronous operation. You'll need to make a request and wait for a repsonse. 
+The component needs to know if the location data is available or not. Getting location data is an asynchronous operation. You'll need to make a request and wait for a response. 
 
 ## Component Lifecycle methods 
 
-Components have a lifecycle that can be used to track when they are created and when they are removed. You woould like the App Component to get the geolocation when the component is created. To do this add this method to the App Class. 
+Components have a lifecycle that can be used to track when they are created and when they are removed. You would like the App Component to get the geolocation when the component is created. To do this add this method to the App Class. 
 
 ```JavaScript 
 ...
@@ -357,7 +357,7 @@ The object returned has two properties: `coords` and `timestamp`. In `coords` is
 
 Your component needs to know when it has geolocation and when it doesn't. It won't have the data when loads, and it may never get the data if it isn't allowed access to the phone's location or if the data isn't available for some other reason. 
 
-You can use state to keep track of this. State is a feature of Class based components. State is special, setting state will cause a component to render. This means that changing state will allow your component to redraw itself. 
+You can use `state` to keep track of this. State is a feature of Class-based components. State is special, setting state will cause a component to render. This means that changing state will allow your component to redraw itself. 
 
 Define some state in the constructor. Add the following to the App Class. 
 
@@ -374,7 +374,7 @@ constructor(props) {
 ...
 ```
 
-Here the state is `location`, and the value is `null`, `weather` will hold the weather data when it is loaded it's default value is `null`, no weather data.  
+Here the state is `location`, and the value is `null`, `weather` will hold the weather data when it is loaded its default value is `null`, no weather data.  
 
 Set the value of the location state in your componentDidMount. 
 
@@ -394,7 +394,7 @@ In components state is special. You'll always set it by calling `this.setState()
 
 You will get the weather data from openweathermap.org. Go there now and make a user account. 
 
-Go to your profile and get your developer apikey. 
+Go to your profile and get your developer API key. 
 
 Add a new method to the App Class. 
 
@@ -428,13 +428,13 @@ componentDidMount() {
 
 React Native uses native systems to get geolocation and to make network requests. These have all been mapped to JavaScript API that works just like it does in the browser. 
 
-Notice here that fetch() is used to load data. After a connection is made the data is treamed as JSON. When that resolves we use this.setState() to assign the weather data to state which will also re-render the component. 
+Notice here that fetch() is used to load data. After a connection is made the data is streamed as JSON. When that resolves we use this.setState() to assign the weather data to state which will also re-render the component. 
 
 `.then(json => this.setState({ weather: json }))`
 
 ## Passing props
 
-You'll want to pass the weather data from App to DisplayWeather. Components all have a sepcial property named props that is used for passing information from a parent component to a child component. 
+You'll want to pass the weather data from App to DisplayWeather. Components all have a special property named props that are used for passing information from a parent component to a child component. 
 
 use props to pass the weather data from App to DisplayWeather. 
 
@@ -478,13 +478,13 @@ const DisplayWeather = (props) => {
 }
 ```
 
-In App component you set your data on the data prop. In displayWeather you get this as props.data. 
+In the App component you set your data on the data prop. In DisplayWeather you get this as props.data. 
 
-The first if state returns a Text component if data is null. This shows the text loading. 
+The first if statement returns a Text component if `props.data` is null. This shows the text "loading...". 
 
-The second if statement looks at the cod property on data. If an error occured the value here will not be 200. In this case return a Text component with an error message. 
+The second if statement looks at the cod property on data. If an error occurred the value here will not be 200. In this case, return a Text component with an error message. 
 
-If these two if statements are by passed then display the weather data. First collect the temp and description to be displayed in JSX block that is returned. 
+If these two if statements are bypassed then display the weather data. First, collect the temp and description to be displayed in the JSX block that is returned. 
 
 ## Looking at the OpenWeatherMap Data
 
@@ -558,11 +558,11 @@ To do this you will need to get the value by navigating the Weather JSON. Then y
 
 Last you'll want to style the new elements. Add a new property to the `styles` object for the element that will use the style. Think of this like a class name you might assign to an HTML element. 
 
-Next assign an object with style properties under this property. Here are some properties you can use: 
+Next, assign an object with style properties under this property. Here are some properties you can use: 
 
-- fontSize
-- fontWeight
-- color
+- `fontSize`
+- `fontWeight`
+- `color`
 
 Assign these properties values that work with React Native. React Native does not use the full selection of CSS values and generally doesn't use units. 
 

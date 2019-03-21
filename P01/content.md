@@ -178,7 +178,7 @@ $ git push
 ```
 
 
-# Challenge:
+# Stretch Challenge:
 
 > [challenge]
 >

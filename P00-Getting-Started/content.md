@@ -11,6 +11,9 @@ Does it work on iOS or Android? It runs on both! This project is built with **Re
 
 Read more about it [here](https://facebook.github.io/react-native/).
 
+# Why Is This Important
+
+Learning this will provide the foundation for the work you'll do through FEW 2.4, where you'll be building more complex react native apps and doing a deeper dive on the fundamentals that you'll learn here.
 
 # Prerequisites
 
@@ -22,8 +25,10 @@ You do need a computer with a text editor and mobile phone, iOS or Android for t
 
 By the end of this tutorial, students should be able to...
 
-1. Create a react native app for iOS and/or Android
-1. ???
+1. Create a react native app for iOS and/or Android using Expo
+1. Implement basic react and react native components
+1. Explain how state works in a react native app
+1. Pass data to components through props
 
 
 # Technical Planning
@@ -95,7 +100,7 @@ $ npm start
 
 This should open a browser window which looks something like:
 
-![ScreenShot-1.png](assets/ScreenShot-1.png)
+![ScreenShot-1.png](assets/01_init-with-expo_expo-page.png)
 
 > [action]
 >

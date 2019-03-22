@@ -130,6 +130,18 @@ Save and reload the app, you should now be getting the temperature of where you'
 
 **Congrats on building your first native react app!**
 
+> [action]
+>
+> As you go through FEW 2.4, reflect back to this tutorial and check that the material you're learning is builds upon what you learned here.
+
+# Feedback and Review - 2 minutes
+
+**We promise this won't take longer than 2 minutes!**
+
+Please take a moment to rate your understanding of learning outcomes from this tutorial, and how we can improve it via our [tutorial feedback form](LINK_TO_YOUR_FORM)
+
+This allows us to get feedback on how well the students are grasping the learning outcomes, and tells us where we can improve the tutorial experience.
+
 # Stretch Challenges
 
 > [challenge]

@@ -1,5 +1,5 @@
 ---
-title: "Component Lifecycle "
+title: "Component Lifecycle"
 slug: component-lifecycle
 ---
 

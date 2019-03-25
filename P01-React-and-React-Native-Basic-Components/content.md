@@ -163,9 +163,13 @@ Notice, when importing your own files you'll need to include a path. Since the f
 </View>
 ```
 
+# Product So Far
+
 Notice that you don't need to use a closing tag for `DisplayWeather` since it doesn't have any children. You do need to use /> to 'self-close' this tag.
 
 Try loading the app on your phone, you should see it say 72˚ in the center of the screen.
+
+Congrats! You got some great practice with **using and creating React Native Components!**
 
 # Now Commit
 

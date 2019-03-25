@@ -126,6 +126,10 @@ This gives us 54.36 which is the temperature in F.
 
 Weather is an array which is why we need to get the first element with `[0]`.
 
+Great work on **using Props and State to configure and manage components in this chapter!**
+
+# Product So Far
+
 Save and reload the app, you should now be getting the temperature of where you're at with a short description of the weather.
 
 **Congrats on building your first native react app!**

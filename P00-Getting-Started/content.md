@@ -25,10 +25,9 @@ You do need a computer with a text editor and mobile phone, iOS or Android for t
 
 By the end of this tutorial, students should be able to...
 
-1. Create a react native app for iOS and/or Android using Expo
-1. Implement basic react and react native components
-1. Explain how state works in a react native app
-1. Pass data to components through props
+1. Use and create React Native Components
+1. Use Props and State to configure and manage components
+1. Use Native networking
 
 
 # Technical Planning

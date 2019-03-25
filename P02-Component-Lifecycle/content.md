@@ -159,7 +159,7 @@ componentDidMount() {
 }
 ```
 
-We shouldn't see anything change in the app quite yet. We still have some work to do in terms of passing the data from `App` to `DisplayWeather`, which we'll get to in the next chapter.
+Great work on **using State to configure and manage components, as well as using some native networking!** We shouldn't see anything change in the app quite yet. We still have some work to do in terms of passing the data from `App` to `DisplayWeather`, which we'll get to in the next chapter.
 
 # Now Commit
 

@@ -3,6 +3,12 @@ title: "Props and Weather Data"
 slug: props-and-weather-data
 ---
 
+1. ~~Build out the components of this app~~
+1. ~~Implement the lifecycle methods for the Components~~
+1. **Implement props and load in weather data**
+    1. **Pass and use props to send information amongst components**
+    1. **Load the weather data into the components**
+
 Before our app will actually display the weather data, we need to pass the weather data from App to DisplayWeather. Components all have a special property named **props** that are used for passing information from a parent component to a child component.
 
 # Passing Props

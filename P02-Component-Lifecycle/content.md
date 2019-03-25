@@ -3,6 +3,13 @@ title: "Component Lifecycle"
 slug: component-lifecycle
 ---
 
+1. ~~Build out the components of this app~~
+1. **Implement the lifecycle methods for the Components**
+    1. **Implement the `componentDidMount` method**
+    1. **Implement State in the app**
+    1. **Fetch the weather data**
+1. Implement props and load in weather data
+
 Components have a lifecycle that can be used to track when they are created and when they are removed. We would like the App Component to get the geolocation when the component is created.
 
 To get the weather data, we need to know the location of the phone. We can get this:

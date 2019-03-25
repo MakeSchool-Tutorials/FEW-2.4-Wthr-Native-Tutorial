@@ -32,7 +32,11 @@ By the end of this tutorial, students should be able to...
 
 # Technical Planning
 
-???
+Let's get a good outline going of what we need to do:
+
+1. Build out the components of this app
+1. Implement the lifecycle methods for the Components
+1. Implement props and load in weather data
 
 # Node.JS
 

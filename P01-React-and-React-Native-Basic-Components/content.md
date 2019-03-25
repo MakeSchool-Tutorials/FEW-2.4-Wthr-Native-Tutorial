@@ -3,6 +3,12 @@ title: "React and React Native Basic concepts "
 slug: react-and-react-native-basic-concepts
 ---
 
+1. **Build out the components of this app**
+    1. **Get basic, stubbed out components set up**
+    1. **Add some style to them**
+1. Implement the lifecycle methods for the Components
+1. Implement props and load in weather data
+
 Let's go over some building blocks of React and React Native that we will use to create our Wthr app.
 
 # Components

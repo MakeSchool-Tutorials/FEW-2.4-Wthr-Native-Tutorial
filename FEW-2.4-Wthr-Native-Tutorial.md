@@ -20,6 +20,15 @@ React Native is based on React which is a JavaScript library for creating user i
 
 Read more about it [here](https://facebook.github.io/react-native/).
 
+## Objectives 
+
+1. Build native apps for Android and iOS
+1. Use React Native Components
+1. Compare and constrast Web vs Native applications
+1. Create components 
+1. Use Props and State to configure and manage components
+1. Use Native networking 
+
 ## Getting started 
 
 ### Node.JS

@@ -126,16 +126,54 @@ Let's get some weather data to load. We'll get ours from [openweathermap.org](op
 >
 > Once you've signed in, select **API Keys** from the nav bar, and **copy your developer API key.**
 
+React Native uses native systems to get geolocation and to make network requests. These have all been mapped to a JavaScript API that works just like it does in the browser.
 
-React Native uses native systems to get geolocation and to make network requests. These have all been mapped to a JavaScript API that works just like it does in the browser. With that in mind, let's add a new method to the App Class that will load in our weather data:
+Before we dive into _using_ our brand new API Key. We need to make sure we're storing it safely in our app. We don't want to just hard-code it since that means when we push it to GitHub, it's out for anyone to use! Let's safeguard this now using an `.env` file, where we can store our private info (such as API Keys) and not have them get uploaded to GitHub or hard-coded in our `.js` files.
+
+First thing we need to do is install [react-native-dotenv](https://github.com/zetachang/react-native-dotenv), which lets you import environment variables from a `.env` file.
 
 > [action]
 >
-> Create the `loadWeather` method in the App Class of `App.js`, replacing `your_api_key` with your actual API key:
+> Follow the install instructions on the [react-native-dotenv GitHub page](https://github.com/zetachang/react-native-dotenv)
+>
+> **NOTE:** Your project currently does not have a .`babelrc` file as the page mentions. Here's a `.babelrc` example that should match what the `react-native-dotenv` page is requesting:
+>
+```json
+{
+    "presets": [
+        "module:metro-react-native-babel-preset",
+        "module:react-native-dotenv"
+    ]
+}
+```
+
+**IMPORTANT NOTE:** Make sure your `.gitignore` is set up to properly ignore `.env` files.
+
+Let's create our `.env` file now:
+
+> [action]
+>
+> At the top level of your project directory, create a new `.env` file, replacing `your_api_key` with your actual key (no quotes):
+>
+```
+WEATHER_API_KEY=your_api_key
+```
+
+Now we can actually add a new method to the App Class that will load in our weather data:
+
+> [action]
+>
+> Create the `loadWeather` method in the App Class of `App.js`, remembering to import our `WEATHER_API_KEY` at the top of the file:
 >
 ```JavaScript
+import { WEATHER_API_KEY } from 'react-native-dotenv'
+>
+export default class App extends React.Component {
+>
+...
+>
 loadWeather() {
-  const apikey = 'your_api_key'
+  const apikey = WEATHER_API_KEY
   const { latitude, longitude } = this.state.location.coords
   const units = 'Imperial'
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apikey}&units=${units}`
@@ -146,6 +184,10 @@ loadWeather() {
   // When that resolves we use `this.setState()` to assign the weather data to state which will also re-render the component.
   .then(json => this.setState({ weather: json }))
   .catch(err => console.log(err.message))
+}
+>
+...
+>
 }
 ```
 

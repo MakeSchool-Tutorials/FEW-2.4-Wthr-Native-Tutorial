@@ -148,7 +148,7 @@ Save and reload the app, you should now be getting the temperature of where you'
 
 **We promise this won't take longer than 2 minutes!**
 
-Please take a moment to rate your understanding of learning outcomes from this tutorial, and how we can improve it via our [tutorial feedback form](LINK_TO_YOUR_FORM)
+Please take a moment to rate your understanding of learning outcomes from this tutorial, and how we can improve it via our [tutorial feedback form](https://forms.gle/A6DWJCR3mymeCLHx8)
 
 This allows us to get feedback on how well the students are grasping the learning outcomes, and tells us where we can improve the tutorial experience.
 

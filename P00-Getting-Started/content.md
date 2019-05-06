@@ -56,6 +56,31 @@ If you're building apps for iOS you'll want to install Xcode. This only runs on 
 >
 > If you're building for Android,  [install Android Studio here](https://developer.android.com/studio/install)
 
+# Set Up Git/GitHub
+
+Much like we've done in earlier tutorials, make sure you're committing your code as you complete milestones. At a minimum, you should make a commit whenever the tutorial prompts you.
+
+Now set up your repo!
+
+>[action]
+> Make your first commit
+>
+```bash
+$ git init
+$ git add .
+$ git commit -m 'project init'
+```
+
+Now Go to GitHub and create a public repository called REPO-NAME, and now associate it as a remote for your local git project and then push to it.
+
+>[action]
+> Push it!
+>
+```bash
+$ git remote add origin GITHUB-REPO-URL
+$ git push origin master -u
+```
+
 # Init with Expo
 
 Once those are done, let's get our project set up. We're going to be using [Expo](https://expo.io/learn) to display our product on our mobile devices.
